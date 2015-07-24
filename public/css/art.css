@@ -1,0 +1,19 @@
+.wrapper{
+	height : 100%
+}
+#header{
+	/**height for placeholder**/
+	height : 80px;
+	border-bottom : 1px solid #eee;
+}
+
+#main{
+	height : calc(100% - 180px);
+	min-height : 500px;
+}
+
+#footer{
+	/**height for placeholder**/
+	height : 80px;
+	border-top : 1px solid #eee;
+}

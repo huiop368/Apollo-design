@@ -1,0 +1,53 @@
+<div>
+	<div class="ui-tle" data-dojo-attach-point="titleEl" style="display:none">
+		<span class="title">${pageTitle}</span>
+	</div>
+	<div class="line clearfix">
+		<div class="grid_3 first column">
+			<label class="label-rqe">Name</label>
+		</div>
+		<div class="column grid_8 last">
+			<input type="text" name="" class="w200" data-dojo-attach-point="nameEl" />
+		</div>
+	</div>
+
+	<div class="line clearfix" data-dojo-attach-point="addressWrap">
+		<div class="grid_3 first column">
+			<label class="label-rqe">IP Address</label>
+		</div>
+		<div class="column grid_8 last">
+			<input type="text" name="" maxLength="255" class="w200" data-dojo-attach-point="ipAddress" />
+		</div>
+	</div>
+	<div class="line clearfix" data-dojo-attach-point="hostnameWrap">
+		<div class="grid_3 first column">
+			<label class="label-rqe">Host Name</label>
+		</div>
+		<div class="column grid_8 last">
+			<input type="text" name="" maxLength="32" class="w200" data-dojo-attach-point="hostName" />
+		</div>
+	</div>
+	<div class="line clearfix" data-dojo-attach-point="rangeWrap">
+		<div class="grid_3 first column">
+			<label class="label-rqe">IP Range</label>
+		</div>
+		<div class="column grid_8 last">
+			<input type="text" name="" placeholder="From IP Address" class="w200" data-dojo-attach-point="ipRange1" />
+			--
+			<input type="text" name="" placeholder="To IP Address" class="w200" data-dojo-attach-point="ipRange2" />
+		</div>
+	</div>
+	<div class="line clearfix" data-dojo-attach-point="subnetWrap">
+		<div class="grid_3 first column">
+			<label class="label-rqe">Subnet</label>
+		</div>
+		<div class="column grid_8 last">
+			<input type="text" name="" placeholder="IP Address" class="w200" data-dojo-attach-point="subnetIp" />
+			<input type="text" name="" placeholder="Netmask" class="w200" data-dojo-attach-point="subnetMask" />
+		</div>
+	</div>
+	<div class="btn-area" data-dojo-attach-point="btnArea">
+		<button class="btn btn-small btn-cancel" data-dojo-attach-point="cancelBtn">Cancel</button>
+		<button class="btn btn-small btn-dim" data-dojo-attach-point="saveBtn">Save</button>
+	</div>
+</div>
