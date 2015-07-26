@@ -3,10 +3,9 @@ html, body {
 }
 
 body {
-    font: 12px helvetica, arial, san-serif;
-    color: #393939;
+    font: 12px/1.5 helvetica, arial, san-serif;
+    color: #777;
     background-color: #fff;
-    line-height: 15px;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     font-smoothing: antialiased;
