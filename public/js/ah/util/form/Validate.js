@@ -1,6 +1,6 @@
 define(['dojo/_base/declare','dijit/_WidgetBase','dijit/_TemplatedMixin','dojo/on','dojo/_base/lang',
-		"dojo/dom-class","dojo/dom-construct", "dojo/i18n!i18n/common/nls/validate_msg"],
-	function(declare,_WidgetBase,_TemplateMixin,on,lang, domClass, domConstruct, Msg){
+		"dojo/dom-class","dojo/dom-construct"],
+	function(declare,_WidgetBase,_TemplateMixin,on,lang, domClass, domConstruct){
 
 		var defaults = {
 			messages : {},
@@ -160,7 +160,7 @@ define(['dojo/_base/declare','dijit/_WidgetBase','dijit/_TemplatedMixin','dojo/o
 
 		// error messages
 
-		/*
+		
 		messages = {
 			required : 'This field is required.',
 			textchar : 'Should be A to Z and a to z.',
@@ -174,10 +174,10 @@ define(['dojo/_base/declare','dijit/_WidgetBase','dijit/_TemplatedMixin','dojo/o
 			email: 'The value must be an email address.',
 			length: format('Please enter {0} characters exactly.')
 		};
-		*/
+		
 
 
-
+		/*
 		validMsg = Msg.def,
 
 		messages = {
@@ -194,6 +194,7 @@ define(['dojo/_base/declare','dijit/_WidgetBase','dijit/_TemplatedMixin','dojo/o
 			length: format(validMsg.length),
 			speCharacter: validMsg.speCharacter
 		};
+		*/
 
 
 

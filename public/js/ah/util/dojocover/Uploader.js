@@ -7,7 +7,7 @@ define(['dojo/_base/declare',
 		"dojo/_base/lang",
 		"dojo/_base/array",
 		"dojo/string",
-		"ah/app/DataMgr",
+		"ah/util/DataMgr",
 		"dojox/form/Uploader"],function(declare, on, query, domStyle, domConstruct, domAttr,lang, array, string, DataMgr, Uploader){
 	
 		return declare('ah/util/dojocover/Uploader',[Uploader],{

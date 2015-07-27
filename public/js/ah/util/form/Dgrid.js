@@ -3,12 +3,11 @@ define([
 		'dojo/on','dojo/_base/lang',"dojo/Deferred","dojo/when", "dojo/_base/array",
 		'dgrid/OnDemandGrid','dgrid/Selector','dgrid/Tree',
 		'dstore/Memory','dstore/Trackable','dstore/Tree',
-		"dojo/dom-construct", "dojo/dom-class", "ah/util/dojocover/AHDialog", "ah/util/form/ReusableObject",
-		"dojo/i18n!i18n/common/nls/status_msg"
+		"dojo/dom-construct", "dojo/dom-class", "ah/util/dojocover/AHDialog"/*, "ah/util/form/ReusableObject"*/
 		],function(
 			declare, ModuleBase, Evented, Menu, on, lang, Deferred, When, array,
 			OnDemandGrid, Selector, Tree, Memory, Trackable, TreeStore,
-			domCon, domClass, Dialog, ReusableObject, StaMsg
+			domCon, domClass, Dialog/*, ReusableObject*/
 		){
 
 		return declare('ah/util/form/Dgrid',[ModuleBase, Evented],{
@@ -201,9 +200,9 @@ define([
 
 
 			messages : {
-				oneItem : StaMsg.oneItemLeast,
-				onlyOne : StaMsg.onlyOneItem,
-				overLimit : function(num){ return StaMsg.overLimit + num; }
+				oneItem : 'You must select at least one item.',
+				onlyOne : 'Please select a single item.',
+				overLimit : function(num){ return 'You may not add more than the following number of items: ' + num; }
 			},
 
 
@@ -487,7 +486,7 @@ define([
 
 				type == 'remove' && this._remove();
 				type == 'wipeAdd' && this._wipeAdd();
-				type == 'reusable' && this._resuableUp();
+				//type == 'reusable' && this._resuableUp();
 
 				if(type == 'speRemove'){
 					this.emit(type, args, this.cfmMsg, lang.hitch(this,this.remove));

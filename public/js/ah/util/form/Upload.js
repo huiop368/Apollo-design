@@ -1,6 +1,6 @@
 define(['dojo/_base/declare','dijit/_WidgetBase','dijit/_TemplatedMixin',
         'dojo/on','dojo/_base/lang','dojo/query',
-         "dojo/dom-class","dojo/dom-style","dojo/dom-construct","ah/app/DataMgr"
+         "dojo/dom-class","dojo/dom-style","dojo/dom-construct","ah/util/DataMgr"
         ],function(declare,_WidgetBase,_TemplateMixin,on,lang,query,domClass, domStyle, domConstruct, DataMgr){
 
         var getUniqueId = function(){

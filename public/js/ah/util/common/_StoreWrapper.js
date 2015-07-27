@@ -1,4 +1,4 @@
-define(['dojo/json', "ah/app/DataMgr"], function (JSON, DataMgr) {
+define(['dojo/json', "ah/util/DataMgr"], function (JSON, DataMgr) {
 	var wrap = function (store) {
 		return {
 			get: function (key, ret) {
